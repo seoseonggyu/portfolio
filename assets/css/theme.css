@@ -1,0 +1,46 @@
+/*
+  Design tokens — the single source of truth for color/typography.
+  Swap values here to re-skin the entire deck without touching any
+  slide data or illustration code.
+*/
+:root {
+  --bg-0: #0a0c10;
+  --bg-1: #12151b;
+  --bg-2: #1a1f27;
+  --line: rgba(255, 255, 255, .08);
+  --line-strong: rgba(255, 255, 255, .18);
+
+  --text-0: #f2f4f7;
+  --text-1: #9aa3af;
+  --text-2: #5b6472;
+
+  /* accent palette — each accent ships with a "soft" translucent
+     companion used for glows/gradients, avoiding runtime color-mix()
+     for broad browser support */
+  --accent-rose: #e2938f;
+  --accent-rose-soft: rgba(226, 147, 143, .32);
+
+  --accent-green: #7ed9a8;
+  --accent-green-soft: rgba(126, 217, 168, .32);
+
+  --accent-gold: #e3c17e;
+  --accent-gold-soft: rgba(227, 193, 126, .32);
+
+  --accent-blue: #82a6e0;
+  --accent-blue-soft: rgba(130, 166, 224, .32);
+
+  --accent-violet: #b39ae0;
+  --accent-violet-soft: rgba(179, 154, 224, .32);
+
+  --accent-neutral: #c7cdd6;
+  --accent-neutral-soft: rgba(199, 205, 214, .32);
+
+  --font-sans: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+
+  /* runtime slide accent — overwritten per-slide by the engine */
+  --slide-accent: var(--accent-blue);
+  --slide-accent-soft: var(--accent-blue-soft);
+}
