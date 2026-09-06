@@ -38,7 +38,7 @@ window.DECK_CHAPTERS.push([
     profile: [
       { label: '이름', value: '서성규 Seo Seong Gyu' },
       { label: '생년월일', value: '1996.04.04' },
-      { label: '학력정보', value: '2026 한국공학대학교 졸업' }
+      { label: '학력정보', value: '한국공학대학교 · 2026.02 졸업' }
     ],
     contacts: [
       { label: '전화번호', value: '010-9430-7590' },

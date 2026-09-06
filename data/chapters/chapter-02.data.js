@@ -35,7 +35,7 @@ window.DECK_CHAPTERS.push([
     meta: [
       { label: '역할', value: '1인 개발 · 콘텐츠 구현' },
       { label: '기술 스택', value: 'Unreal Engine 5 · C++ · GAS · Iris' },
-      { label: '작업 기간', value: '2026.08 – 진행 중' },
+      { label: '작업 기간', value: '2026.05 – 진행 중' },
       { label: 'Repo', value: 'seoseonggyu/A1', url: 'https://github.com/seoseonggyu/A1' }
     ],
     summary: '플러그인 구조와 코딩 규칙 위에서, 콘텐츠 개발은 AI를 개발 파트너로 삼아 진행하고 있습니다.',

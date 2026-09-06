@@ -4,8 +4,11 @@
   Standalone-viewable: open chapter-03.html to see only this chapter.
   See PROMPT.md for authoring rules, README.md for how chapters wire together.
 
-  출처: 사용자 제공 PDF(서버-포트폴리오.pdf)와 실제 소스(github seoseonggyu/L1 의
-  GameServer)를 직접 읽어 재구성. 2인 팀, 서버·클라이언트 전 영역을 본인이 구현.
+  출처: 사용자 제공 PDF(서버-포트폴리오.pdf)와 실제 소스(Perforce 워크스페이스
+  ASSEMBER/GameServer · ASSEMBER/GradGame)를 직접 읽어 재구성. 2인 팀, 서버·클라이언트
+  전 영역을 본인이 구현. 저장소는 용량 문제로 서버(seoseonggyu/GameServer)와
+  클라이언트(seoseonggyu/GradGame)를 분리해 올렸고, 클라이언트는 Content(약 4.6GB,
+  마켓플레이스 에셋 포함)를 제외한 C++ 소스만 담았다.
   기능 나열이 아니라 "왜 이렇게 설계했는가 / 어떤 문제를 어떻게 풀었는가" 중심(PROMPT.md §3).
   세 가지 핵심 문제(락 경합·교착·이동 오차)를 각각 「도식(schematic) + 실제 코드」
   2장으로 풀어, 처음 보는 사람도 "이 문제 때문에 이렇게 만들었구나"를 알 수 있게 구성.
@@ -25,7 +28,9 @@ window.DECK_CHAPTERS.push([
       { label: '역할', value: '2인 팀 · 서버/클라이언트 구현' },
       { label: '기술 스택', value: 'Unreal Engine 5 · C++ · IOCP · Protobuf' },
       { label: '작업 기간', value: '2024.08 – 2025.03' },
-      { label: 'Repo', value: 'seoseonggyu/L1', url: 'https://github.com/seoseonggyu/L1' }
+      { label: '서버 Repo', value: 'seoseonggyu/GameServer', url: 'https://github.com/seoseonggyu/GameServer' },
+      { label: '클라 Repo', value: 'seoseonggyu/GradGame', url: 'https://github.com/seoseonggyu/GradGame' },
+      { label: '저장소', value: '용량 문제로 서버 · 클라이언트를 나눠 올렸습니다. 클라이언트는 에셋을 뺀 C++ 소스만 담았습니다.' }
     ],
     summary: '락 경합·교착 상태·이동 동기화 오차를 직접 진단하고 설계로 풀어 IOCP 서버를 완성했습니다.',
     chapterSubtitle: '세 가지 동시성 문제를 각각 「문제 도식 → 실제 코드」로 풀어, 왜 이렇게 만들었는지를 보여드립니다.'
