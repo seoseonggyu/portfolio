@@ -57,11 +57,11 @@
       var b = (s.items && s.items[1]) ? s.items[1].label : 'B';
       body =
         '<div class="il-schem__cycle" style="' + av + '">' +
-          '<svg viewBox="0 0 180 150" class="il-schem__cycle-svg" preserveAspectRatio="xMidYMid meet">' +
+          '<svg viewBox="0 0 260 150" class="il-schem__cycle-svg" preserveAspectRatio="xMidYMid meet">' +
             '<defs><marker id="schemArrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">' +
               '<path d="M0 0L9 4.5L0 9z" fill="currentColor"/></marker></defs>' +
-            '<path d="M62 44 A55 55 0 0 1 118 44" fill="none" stroke="currentColor" stroke-width="3" marker-end="url(#schemArrow)"/>' +
-            '<path d="M118 106 A55 55 0 0 1 62 106" fill="none" stroke="currentColor" stroke-width="3" marker-end="url(#schemArrow)"/>' +
+            '<path d="M78 44 A90 90 0 0 1 182 44" fill="none" stroke="currentColor" stroke-width="3" marker-end="url(#schemArrow)"/>' +
+            '<path d="M182 106 A90 90 0 0 1 78 106" fill="none" stroke="currentColor" stroke-width="3" marker-end="url(#schemArrow)"/>' +
           '</svg>' +
           '<div class="il-schem__cycle-node il-schem__cycle-node--l">' + a + '</div>' +
           '<div class="il-schem__cycle-node il-schem__cycle-node--r">' + b + '</div>' +

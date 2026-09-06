@@ -122,7 +122,7 @@ window.DECK_CHAPTERS.push([
             team: '3인',
             accent: 'violet',
             thumb: 'assets/img/doubleslit-title.png',
-            link: { label: '영상', icon: 'play', url: 'https://www.youtube.com/watch?v=is4dlqXOmmo' }
+            link: { label: '영상', icon: 'play', url: 'https://www.youtube.com/watch?v=is4dIqXOmmo' }
           },
           {
             title: '1인칭 탈출 게임',

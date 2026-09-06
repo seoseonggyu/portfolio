@@ -763,7 +763,7 @@ a.il-photo__frame:hover .il-photo__play { transform: scale(1.08); border-color: 
 /* circular-wait glyph for the deadlock story */
 .il-schem__cycle {
   position: relative;
-  width: 200px; height: 150px;
+  width: 260px; height: 150px;
   color: var(--a);
 }
 .il-schem__cycle-svg { width: 100%; height: 100%; display: block; }
