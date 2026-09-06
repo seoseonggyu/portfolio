@@ -360,7 +360,7 @@
 .il-pcard__meta { font-size: 13px; color: var(--text-1); }
 .il-pcard__tech { font-size: 13px; font-weight: 600; color: var(--a); }
 .il-pcard__link {
-  display: inline-flex; align-items: center; gap: 6px;
+  display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;
   margin-top: 4px;
   font-size: 12px; font-weight: 600;
   color: var(--text-1); text-decoration: none;
@@ -835,3 +835,14 @@ a.il-photo__frame:hover .il-photo__play { transform: scale(1.08); border-color: 
 .lightbox__close:hover { border-color: var(--text-0); }
 body.lightbox-lock { overflow: hidden; }
 @keyframes lightbox-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* 카드 링크에 병기하는 주소 — 제출용 PDF에서 따라갈 수 있게. */
+.il-pcard__url {
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-2);
+  word-break: break-all;
+}

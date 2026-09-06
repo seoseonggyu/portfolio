@@ -20,7 +20,8 @@
 
       const linkHtml = (p.link && p.link.url)
         ? '<a class="il-pcard__link" href="' + p.link.url + '" target="_blank" rel="noopener" data-no-nav>' +
-            Deck.icons[p.link.icon || 'play'] + '<span>' + (p.link.label || '영상') + '</span></a>'
+            Deck.icons[p.link.icon || 'play'] + '<span>' + (p.link.label || '영상') + '</span>' +
+            '<span class="il-pcard__url">' + Deck.formatUrl(p.link.url) + '</span></a>'
         : '';
 
       const thumbHtml = p.thumb

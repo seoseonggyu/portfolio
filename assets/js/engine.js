@@ -125,7 +125,7 @@ Deck.Engine.prototype._renderChapterMeta = function (meta) {
 
   const rows = meta.map(function (item) {
     const value = item.url
-      ? '<a class="slide__meta-value-link" href="' + item.url + '" target="_blank" rel="noopener" data-no-nav>' + item.value + '</a>'
+      ? '<a class="slide__meta-value-link" href="' + item.url + '" target="_blank" rel="noopener" data-no-nav>' + Deck.formatUrl(item.url) + '</a>'
       : item.value;
     return '<div class="slide__meta-row">' +
       '<div class="slide__meta-label">' + item.label + '</div>' +
@@ -152,7 +152,8 @@ Deck.Engine.prototype._renderLinks = function (links) {
 
     if (hasUrl) {
       return '<a class="slide__link" href="' + link.url + '" target="_blank" rel="noopener" data-no-nav>' +
-        icon + '<span>' + label + '</span></a>';
+        icon + '<span>' + label + '</span>' +
+        '<span class="slide__link-url">' + Deck.formatUrl(link.url) + '</span></a>';
     }
     return '<span class="slide__link slide__link--pending">' + icon +
       '<span>' + label + ' <em>(링크 추가 예정)</em></span></span>';

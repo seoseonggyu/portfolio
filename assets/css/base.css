@@ -374,3 +374,13 @@ a.slide__meta-value-link:hover { color: var(--slide-accent); border-color: var(-
   font-family: var(--font-mono);
   font-size: 14px;
 }
+
+/* CTA 칩에 병기하는 주소 — 제출용 PDF는 링크 주석이 빠지므로 눈에 보여야 한다. */
+.slide__link-url {
+  padding-left: 10px;
+  margin-left: 2px;
+  border-left: 1px solid var(--line-strong);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-2);
+}

@@ -24,3 +24,15 @@ Deck.renderIllustration = function (container, type, props) {
   }
   renderFn(container, props || {});
 };
+
+/*
+  URL을 슬라이드에 글자로 보여줄 때 쓰는 표기 — 프로토콜과 www를 뗀다.
+  제출용 PDF에서는 링크 주석이 제거되므로(넥슨 업로드 정책), 주소가 눈에
+  보여야 심사자가 따라갈 수 있다.
+*/
+Deck.formatUrl = function (url) {
+  return String(url || '')
+    .replace(/^https?:\/\//, '')
+    .replace(/^www\./, '')
+    .replace(/\/$/, '');
+};
