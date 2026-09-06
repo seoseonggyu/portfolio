@@ -838,7 +838,7 @@ body.lightbox-lock { overflow: hidden; }
 
 /* 카드 링크에 병기하는 주소 — 제출용 PDF에서 따라갈 수 있게. */
 .il-pcard__url {
-  display: block;
+  display: none;
   width: 100%;
   margin-top: 2px;
   font-size: 11px;
@@ -846,3 +846,4 @@ body.lightbox-lock { overflow: hidden; }
   color: var(--text-2);
   word-break: break-all;
 }
+.is-export .il-pcard__url { display: block; }

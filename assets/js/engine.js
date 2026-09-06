@@ -125,7 +125,9 @@ Deck.Engine.prototype._renderChapterMeta = function (meta) {
 
   const rows = meta.map(function (item) {
     const value = item.url
-      ? '<a class="slide__meta-value-link" href="' + item.url + '" target="_blank" rel="noopener" data-no-nav>' + Deck.formatUrl(item.url) + '</a>'
+      ? '<a class="slide__meta-value-link" href="' + item.url + '" target="_blank" rel="noopener" data-no-nav>' +
+          '<span class="slide__meta-value-short">' + item.value + '</span>' +
+          '<span class="slide__meta-value-url">' + Deck.formatUrl(item.url) + '</span></a>'
       : item.value;
     return '<div class="slide__meta-row">' +
       '<div class="slide__meta-label">' + item.label + '</div>' +

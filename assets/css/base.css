@@ -377,6 +377,7 @@ a.slide__meta-value-link:hover { color: var(--slide-accent); border-color: var(-
 
 /* CTA 칩에 병기하는 주소 — 제출용 PDF는 링크 주석이 빠지므로 눈에 보여야 한다. */
 .slide__link-url {
+  display: none;
   padding-left: 10px;
   margin-left: 2px;
   border-left: 1px solid var(--line-strong);
@@ -384,3 +385,9 @@ a.slide__meta-value-link:hover { color: var(--slide-accent); border-color: var(-
   font-weight: 500;
   color: var(--text-2);
 }
+.is-export .slide__link-url { display: inline; }
+
+/* 표지 meta의 Repo 행 — 웹에서는 짧게, 내보내기에서는 전체 주소로. */
+.slide__meta-value-url { display: none; }
+.is-export .slide__meta-value-short { display: none; }
+.is-export .slide__meta-value-url { display: inline; }
