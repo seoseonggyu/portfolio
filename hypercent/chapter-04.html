@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Deck — Chapter 04</title>
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" as="style" crossorigin
+  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+
+<link rel="stylesheet" href="assets/css/theme.css" />
+<link rel="stylesheet" href="assets/css/base.css" />
+<link rel="stylesheet" href="assets/css/illustrations.css" />
+<link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body>
+
+<div class="deck" id="deck">
+  <div class="deck__progress" id="deckProgress"></div>
+
+  <div class="deck__frame">
+    <header class="deck__meta-row">
+      <div class="deck__brand" id="deckBrand">PORTFOLIO</div>
+      <div class="deck__counter" id="deckCounter">01 / 01</div>
+    </header>
+
+    <main class="deck__slide-root" id="slideRoot" aria-live="polite"></main>
+  </div>
+
+  <button class="deck__nav deck__nav--prev" id="navPrev" aria-label="이전 슬라이드">&#8249;</button>
+  <button class="deck__nav deck__nav--next" id="navNext" aria-label="다음 슬라이드">&#8250;</button>
+  <div class="deck__hint">방향키 / 클릭 / 스와이프로 이동</div>
+</div>
+
+<!-- icon + registry core -->
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/registry.js"></script>
+
+<!-- illustration "specializations" -->
+<script src="assets/js/illustrations/compare.js"></script>
+<script src="assets/js/illustrations/twoPath.js"></script>
+<script src="assets/js/illustrations/radialFan.js"></script>
+<script src="assets/js/illustrations/iconGrid.js"></script>
+<script src="assets/js/illustrations/statHero.js"></script>
+<script src="assets/js/illustrations/photo.js"></script>
+<script src="assets/js/illustrations/flow.js"></script>
+<script src="assets/js/illustrations/sequence.js"></script>
+<script src="assets/js/illustrations/projectCards.js"></script>
+<script src="assets/js/illustrations/codePanels.js"></script>
+<script src="assets/js/illustrations/featureShots.js"></script>
+
+<!-- engine -->
+<script src="assets/js/engine.js"></script>
+<script src="assets/js/lightbox.js"></script>
+
+<!-- content: THIS CHAPTER ONLY. -->
+<script src="data/meta.data.js"></script>
+<script src="data/chapters/chapter-04.data.js"></script>
+
+<!-- bootstrap -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
